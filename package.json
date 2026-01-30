@@ -1,0 +1,24 @@
+{
+  "name": "educode-master",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:student": "npm run dev --prefix student-portal",
+    "dev:admin": "npm run dev --prefix admin-portal",
+    "install:student": "npm install --prefix student-portal",
+    "install:admin": "npm install --prefix admin-portal",
+    "install:all": "npm run install:student && npm run install:admin",
+    "build:all": "npm run build --prefix student-portal && npm run build --prefix admin-portal"
+  },
+  "dependencies": {
+    "firebase": "^12.8.0",
+    "lucide-react": "^0.563.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "vite": "^7.2.2"
+  }
+}
