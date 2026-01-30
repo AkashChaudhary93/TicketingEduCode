@@ -1,0 +1,12 @@
+{
+    "buildCommand": "cd admin-portal && npm install && npm run build",
+    "outputDirectory": "admin-portal/dist",
+    "framework": null,
+    "installCommand": "npm install",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}

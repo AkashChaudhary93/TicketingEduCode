@@ -1,4 +1,5 @@
 {
+    "installCommand": "cd .. && npm install --prefix shared || true && cd admin-portal && npm install",
     "buildCommand": "npm run build",
     "outputDirectory": "dist",
     "framework": "vite",
