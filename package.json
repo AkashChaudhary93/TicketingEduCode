@@ -9,7 +9,9 @@
     "install:student": "npm install --prefix student-portal",
     "install:admin": "npm install --prefix admin-portal",
     "install:all": "npm run install:student && npm run install:admin",
-    "build:all": "npm run build --prefix student-portal && npm run build --prefix admin-portal"
+    "build:all": "npm run build --prefix student-portal && npm run build --prefix admin-portal",
+    "vercel-build-student": "npm install --prefix student-portal && npm run build --prefix student-portal",
+    "vercel-build-admin": "npm install --prefix admin-portal && npm run build --prefix admin-portal"
   },
   "dependencies": {
     "firebase": "^12.8.0",
