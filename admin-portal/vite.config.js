@@ -17,7 +17,10 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            '@shared': path.resolve(__dirname, '../shared')
+            '@shared': path.resolve(__dirname, '../shared'),
+            // Deduplicate React to prevent multiple instances
+            'react': path.resolve(__dirname, 'node_modules/react'),
+            'react-dom': path.resolve(__dirname, 'node_modules/react-dom')
         }
     },
     build: {
@@ -27,5 +30,8 @@ export default defineConfig({
                 manualChunks: undefined
             }
         }
+    },
+    optimizeDeps: {
+        include: ['react', 'react-dom', 'react-router-dom']
     }
 })
